@@ -72,9 +72,8 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         with:
-          projectBaseDir: /home/runner/work/demo-actions-cli/demo-actions-cli
+          projectBaseDir: /github/workspace/src
           args: >
-            -Dsonar.projectBaseDir=/github/workspace
             -Dsonar.verbose=true
        #     -Dsonar.userHome=.
       - name: "Where's my cache"

@@ -74,6 +74,7 @@ jobs:
         with:
           projectBaseDir: /home/runner/work/demo-actions-cli/demo-actions-cli
           args: >
+            -Dsonar.projectBaseDir=/home/runner/work/
             -Dsonar.verbose=true
        #     -Dsonar.userHome=.
       - name: "Where's my cache"
